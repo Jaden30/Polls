@@ -6,7 +6,7 @@ urlpatterns = [
     # for polls.views.index 
     path('', views.index, name="index"),
     # for polls.views.details which is polls/question_id 
-    path('<int:question_id>/', views.detail, name="details"),
+    path('<int:question_id>/', views.detail, name="detail"),
     # for polls.views.results which is polls/question_id/results 
     path('<int:question_id>/results/', views.results, name="results"),
     # for polls.views.vote which is polls/qiestion_id/vote
